@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Film İzle - Google Drive</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .video-container {
+      position: relative;
+      width: 90%;
+      max-width: 900px;
+      aspect-ratio: 16 / 9;
+      border: 3px solid #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎬 Film İzle</h1>
+  <div class="video-container">
+    <iframe src="https://drive.google.com/file/d/17Wy_Q-C4s8v-0Xt08Y2AyTqcdDrnjWQh/preview" allow="autoplay" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
