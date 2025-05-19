@@ -36,15 +36,20 @@
   </style>
 </head>
 
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<!-- OneSignal SDK -->
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "bdec8d4a-f23c-4652-8e69-f2a1087213d8",
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "SENİN-ONESIGNAL-APP-ID", // buraya kendi OneSignal App ID’ni koy
       notifyButton: {
-        enable: true,  // Bildirim butonu aktif
+        enable: true, // Abone ol butonu
       },
+      welcomeNotification: {
+        "title": "Hoş geldin!",
+        "message": "Bildirimlere abone olduğun için teşekkürler!"
+      }
     });
   });
 </script>
