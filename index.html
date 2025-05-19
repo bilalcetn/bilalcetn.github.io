@@ -36,20 +36,16 @@
   </style>
 </head>
 
-<!-- OneSignal SDK -->
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 <script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "bdec8d4a-f23c-4652-8e69-f2a1087213d8", // buraya kendi OneSignal App ID’ni koy
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "bdec8d4a-f23c-4652-8e69-f2a1087213d8",
+      safari_web_id: "web.onesignal.auto.0912ed1f-6073-4d84-af67-68904cc10338",
       notifyButton: {
-        enable: true, // Abone ol butonu
+        enable: true,
       },
-      welcomeNotification: {
-        "title": "Hoş geldin!",
-        "message": "Bildirimlere abone olduğun için teşekkürler!"
-      }
     });
   });
 </script>
