@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZBot</title>
+<style>
+  /* Her şey ekran yüksekliğine göre ölçeklenir: küçük ekranda da kaydırma çubuğu çıkmaz */
+  html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    background: #0b0b10;
+    color: #d6d8e0;
+    font-family: Segoe UI, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100dvh;
+    font-size: clamp(7px, min(1.85vh, 3.4vw), 16px);
+  }
+  .box {
+    width: min(560px, 92vw);
+    max-height: 100%;
+    box-sizing: border-box;
+    padding: 2vh 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo { width: 6em; height: 6em; display: block; margin: 0 auto; flex-shrink: 0; }
+  .box > * { flex-shrink: 0; }
+  h1 { margin: 0.3em 0 0.1em; font-size: 2.6em; color: #fff; }
+  .sub { color: #8f94a8; margin-bottom: 1.6em; }
+  .btn {
+    display: inline-block;
+    align-self: center;
+    background: #3b5bdb;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8em 2em;
+    border-radius: 8px;
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  .btn:hover { background: #4c6ef5; }
+  .version { color: #8f94a8; font-size: 0.85em; margin-top: 0.6em; }
+  ul {
+    text-align: left;
+    background: #14141c;
+    border: 1px solid #262636;
+    border-radius: 8px;
+    padding: 1em 1em 1em 2.4em;
+    margin: 1.6em 0 1.2em;
+    line-height: 1.7;
+  }
+  h2 { color: #fff; font-size: 1.25em; text-align: left; margin: 0 0 0.3em; }
+  ol { text-align: left; line-height: 1.7; margin: 0; padding-left: 1.6em; }
+  .warn {
+    margin-top: 1.6em;
+    text-align: left;
+    background: #2a1d0c;
+    border: 1px solid #b7791f;
+    color: #f6d39a;
+    border-radius: 8px;
+    padding: 0.9em 1.2em;
+    line-height: 1.55;
+    font-size: 0.9em;
+  }
+  .warn b { color: #ffc861; }
+</style>
+</head>
+<body>
+<div class="box">
+
+  <svg class="logo" viewBox="0 0 64 64" aria-label="ZBot">
+    <rect width="64" height="64" rx="14" fill="#3b5bdb"/>
+    <path d="M18 18h28v6L27 40h19v6H18v-6l19-16H18z" fill="#fff"/>
+  </svg>
+
+  <h1>ZBot</h1>
+  <div class="sub">Silkroad için basit ve hafif avlanma botu</div>
+
+  <!-- İndirme linkini kendi dosyanın adresiyle değiştir -->
+  <a class="btn" href="ZBot.zip">ZBot'u İndir</a>
+  <div class="version">Sürüm 1.0 · Windows</div>
+
+  <ul>
+    <li>Otomatik giriş ve yeniden bağlanma</li>
+    <li>Avlanma, yetenek ve buff yönetimi</li>
+    <li>Kasaba döngüsü: satış, depo, tamir, alışveriş</li>
+    <li>Eşya toplama filtresi</li>
+    <li>Parti, parti eşleştirme ve otomatik diriltme</li>
+    <li>Türkçe ve İngilizce arayüz</li>
+  </ul>
+
+  <h2>Kurulum</h2>
+  <ol>
+    <li>Zip dosyasını indir ve bir klasöre çıkart.</li>
+    <li><b>ZBot.exe</b>'yi çalıştır ve Silkroad klasörünü seç.</li>
+    <li>Ayarlarını yap, oyunu başlat ve botu çalıştır.</li>
+  </ol>
+
+  <div class="warn">
+    <b>⚠ Güvenlik uyarısı</b><br>
+    ZBot'u her zaman <b>sadece bu sayfadan</b> indir. Başka sitelerden,
+    forumlardan veya kişilerden gelen ZBot dosyaları değiştirilmiş olabilir
+    ve kullanıcı adı ile şifreni çalabilir. Orijinal ZBot hesap bilgilerini
+    hiçbir yere göndermez.
+  </div>
+
+</div>
+</body>
+</html>
